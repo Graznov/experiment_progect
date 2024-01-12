@@ -1,0 +1,96 @@
+.container{
+
+  //невыделяемый текст:
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none;
+  //...невыделяемый текст
+
+  width: 400px;
+  margin: 10px auto;
+  padding: 20px;
+  border-radius: 20px;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  background: black;
+
+  .inpArea{
+    display: flex;
+    flex-direction: column;
+
+    .topArea,
+    .battlefield{
+      text-align: right;
+      font-size: 40px;
+      margin-bottom: 10px;
+      height: 110px;
+      width: 320px;
+      align-self: flex-end;
+    }
+    .battlefield{
+      height: 50px;
+    }
+
+    .operator{
+      color: gray;
+      margin-top: -35px;
+      font-size: 55px;
+      text-align: center;
+      width: 35px;
+      height: 35px;
+    }
+  }
+
+  .btnArea{
+
+    button{
+      font-size: 30px;
+      width: 70px;
+      height: 70px;
+      margin: 10px;
+      border-radius: 50%;
+      border: none;
+      cursor: pointer;
+
+    }
+    .buttonNumb{
+      background: #222222;
+      color: white;
+    }
+    .deactive{
+      pointer-events: none;
+      opacity: .5;
+    }
+    button:hover{
+      background: #3d3d3d;
+      color: white;
+    }
+    button:active{
+      background: #3d3d3d;
+      color: black;
+    }
+    .btnOperator{
+      background: #dcb004;
+    }
+    .btnOperator:hover{
+      background: #c09a04;
+    }
+    .btnOperatorTop{
+      background: #a5a5a5;
+      color: #000000ff;
+    }
+    .btnOperatorTop:hover{
+      background: #858585;
+    }
+    .zero{
+      width: 160px;
+      border-radius: 40px;
+    }
+
+  }
+
+}
+

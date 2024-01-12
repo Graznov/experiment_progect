@@ -1,10 +1,10 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
-import './index.css'
+import './index.scss'
+import Calc from "./Calc/Calc.jsx";
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+ReactDOM.createRoot(document.querySelector('.root')).render(
   <React.StrictMode>
-    {/*<App />*/}
+    <Calc/>
   </React.StrictMode>,
 )
